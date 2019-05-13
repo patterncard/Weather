@@ -41,7 +41,7 @@ int main()
     chunk.size = 0;
     if (curl)
     {
-        printf("Choose city number:\n[1] Bialystok\n[2] Gdansk\n[3] Gliwice\n[4] Katowice\n[5] Lodz\n[6] Opole\n[7] Warsaw\n[8] Zywiec\n[9] Exit\n");
+        printf("Choose city number:\n[1] Bialystok\n[2] Gdansk\n[3] Gliwice\n[4] Katowice\n[5] Lodz\n[6] Opole\n[7] Warsaw\n[8] Zywiec\n[0] Exit\n");
         int cityChoosen;
         scanf("%d", &cityChoosen);
         switch (cityChoosen)
@@ -190,7 +190,7 @@ int main()
             curl_easy_cleanup(curl);
             curl_easy_cleanup(curl_handle);
             break;
-        case 9:
+        case 0:
             exit(1);
         default:
             printf("You have not choosen the city.\n");
