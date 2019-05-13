@@ -1,4 +1,5 @@
+.PHONY: build
 build:
-	gcc Weather.c -Iinclude -Llib -lcurl -o weather
+	gcc "src/Weather.c" -Iinclude -Llib -lcurl -o "build/weather"
 run:
-	./weather
+	./build/weather
