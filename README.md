@@ -4,6 +4,6 @@ Application feching weather data and checking whether all response have been ret
 ## To run program:
 1. Install curl library
 2. Build using command:
-  $ make build 
+  <br/>$ make build 
 3. Run using command:
-  $ make run
+  <br/>$ make run
